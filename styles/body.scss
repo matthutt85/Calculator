@@ -26,6 +26,21 @@ body {
     .screen {
         background-color: rgb(231, 229, 229);
         grid-column: 1 / -1;
+        border: 1px solid red;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px;
+
+        &__top {
+            font-size: 20px;
+        }
+
+        &__bottom {
+            font-size: 30px;
+        }
+
     }
 
 

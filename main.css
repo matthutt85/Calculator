@@ -23,6 +23,18 @@ body {
 .calculator-grid .screen {
   background-color: #e7e5e5;
   grid-column: 1/-1;
+  border: 1px solid red;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+}
+.calculator-grid .screen__top {
+  font-size: 20px;
+}
+.calculator-grid .screen__bottom {
+  font-size: 30px;
 }
 .calculator-grid button {
   margin: 5px;
