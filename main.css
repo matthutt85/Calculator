@@ -36,6 +36,21 @@ body {
 .calculator-grid .screen__bottom {
   font-size: 30px;
 }
+.calculator-grid .operation-button {
+  background-color: #df953c;
+}
+.calculator-grid .del {
+  background-color: darkred;
+  color: white;
+}
+.calculator-grid .all-clear {
+  background-color: darkslategray;
+  color: orange;
+}
+.calculator-grid .equals {
+  background-color: #1b18be;
+  color: whitesmoke;
+}
 .calculator-grid button {
   margin: 5px;
   padding: 5px;

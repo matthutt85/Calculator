@@ -43,6 +43,25 @@ body {
 
     }
 
+    .operation-button {
+        background-color: rgb(223, 149, 60);
+    }
+
+    .del {
+        background-color: darkred;
+        color: white;
+    }
+
+    .all-clear {
+        background-color: darkslategray;
+        color: orange;
+    }
+
+    .equals {
+        background-color: rgb(27, 24, 190);
+        color: whitesmoke;
+    }
+
 
     button {
         margin: 5px;
@@ -55,5 +74,7 @@ body {
     button:hover {
         background-color: cornsilk;
     }
+
+
    
 }
