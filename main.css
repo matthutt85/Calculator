@@ -43,13 +43,22 @@ body {
   background-color: darkred;
   color: white;
 }
+.calculator-grid .del:hover {
+  background-color: black;
+}
 .calculator-grid .all-clear {
   background-color: darkslategray;
   color: orange;
 }
+.calculator-grid .all-clear:hover {
+  background-color: black;
+}
 .calculator-grid .equals {
   background-color: #1b18be;
   color: whitesmoke;
+}
+.calculator-grid .equals:hover {
+  background-color: darkred;
 }
 .calculator-grid button {
   margin: 5px;

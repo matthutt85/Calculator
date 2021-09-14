@@ -52,14 +52,26 @@ body {
         color: white;
     }
 
+    .del:hover {
+        background-color: black;
+    }
+
     .all-clear {
         background-color: darkslategray;
         color: orange;
     }
 
+    .all-clear:hover {
+        background-color: black;
+    }
+
     .equals {
         background-color: rgb(27, 24, 190);
         color: whitesmoke;
+    }
+
+    .equals:hover {
+        background-color: darkred;
     }
 
 
