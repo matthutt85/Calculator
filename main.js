@@ -33,4 +33,5 @@ del.addEventListener('click', (e) => {
 
 allClear.addEventListener('click', (e) => {
   display.textContent = '';
+  displayInput = '';
 });
