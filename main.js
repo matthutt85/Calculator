@@ -5,16 +5,17 @@ const del = document.querySelector(".del");
 const allClear = document.querySelector(".all-clear");
 const equals = document.querySelector(".equals");
 
-let numberInput;
-let operationInput;
+let displayInput = '';
+let operationInput = '';
+
 
 numbersButtons.forEach(number => {
     number.addEventListener('click', (event) => {
-      numberInput = event.target.innerText;
-      display.textContent = numberInput
-      console.log(numberInput)
+      displayInput += event.target.innerText;
+      display.textContent = displayInput;
+      console.log(displayInput)
     }); 
-})
+});
       
 
 operationButtons.forEach(operation => {
