@@ -23,8 +23,8 @@ operationButtons.forEach(operation => {
 })
 
 equals.addEventListener('click', (e) => {
-  let expression = display.textContent;
-  display.textContent = eval(expression);
+  let sum = display.textContent;
+  display.textContent = eval(sum);
 });
 
 del.addEventListener('click', (e) => {
