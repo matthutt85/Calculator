@@ -20,7 +20,7 @@ body {
   padding: 5%;
   margin: 5%;
 }
-.calculator-grid .screen {
+.calculator-grid .display {
   background-color: #e7e5e5;
   grid-column: 1/-1;
   border: 1px solid red;
@@ -30,10 +30,10 @@ body {
   justify-content: space-around;
   padding: 5px;
 }
-.calculator-grid .screen__top {
+.calculator-grid .display__top {
   font-size: 20px;
 }
-.calculator-grid .screen__bottom {
+.calculator-grid .display__bottom {
   font-size: 30px;
 }
 .calculator-grid .operation-button {
