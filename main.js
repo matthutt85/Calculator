@@ -11,13 +11,29 @@ let displayInput1 = '';
 let displayInput2 = '';
 let tempDisplay1 = '';
 let result = null;
-let lastOperation = '';
+let sum = '';
+
+
+const calculate = (firstSum, secondSum  ) => {
+  console.log(sum)
+  if(sum === '*') {
+    return (parseFloat(firstSum) * parseFloat(secondSum));
+  } else if (sum === '+') {
+    return (parseFloat(firstSum) + parseFloat(secondSum));
+  } else if (sum === '-') {
+    return (parseFloat(firstSum) - parseFloat(secondSum));
+  } else if (sum === '/') {
+    return (parseFloat(firstSum) / parseFloat(secondSum));
+  } 
+}
 
 
 numbersButtons.forEach(number => {
   number.addEventListener('click', (event) => {
     displayInput1 += event.target.innerText;
     display.textContent = displayInput1;
+
+    console.log(event.target.innerText)
   }); 
 })
 
@@ -26,15 +42,11 @@ operationButtons.forEach(operation => {
   operation.addEventListener('click', (e) => {
     if (!displayInput1) return;
     const operationName = e.target.innerText;
-    if (displayInput1 && displayInput2 && lastOperation) {
-      sum();
-    } else {
+    
       result = parseFloat(displayInput1);
-    }
-    clearOp(operationName);
-    console.log(result);
-    // displayInput += e.target.innerText;
-    // display.textContent = displayInput;
+    
+      clearOp(operationName);
+      sum = operationName
   });
 });
 
@@ -47,13 +59,10 @@ function clearOp (name = '') {
 
 
 equals.addEventListener('click', (e) => {
-  // let sum = display.textContent;
-  // display.textContent = eval(sum);
+  display.innerText = calculate (result, displayInput1) 
 });
 
-del.addEventListener('click', (e) => {
-  
-});
+
 
 allClear.addEventListener('click', (e) => {
   display.textContent = '';
