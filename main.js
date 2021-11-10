@@ -32,8 +32,6 @@ numbersButtons.forEach(number => {
   number.addEventListener('click', (event) => {
     displayInput1 += event.target.innerText;
     display.textContent = displayInput1;
-
-    console.log(event.target.innerText)
   }); 
 })
 
@@ -50,7 +48,7 @@ operationButtons.forEach(operation => {
   });
 });
 
-function clearOp (name = '') {
+const clearOp = (name = '') => {
   displayInput2 += displayInput1 + ' ' + name + ' ';
   display2.innerText = displayInput2;
   display.innerText = '';

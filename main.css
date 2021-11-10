@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,17 @@
 }
 
 body {
-  background-color: #0a0a0a;
+  background-image: linear-gradient(#884588, #cfb2f0);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin-top: 20px;
+  color: aliceblue;
+  font-family: "Finger Paint", Cursive;
 }
 
 .calculator-grid {
@@ -17,13 +28,13 @@ body {
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  padding: 5%;
-  margin: 5%;
 }
 .calculator-grid .display {
-  background-color: #e7e5e5;
+  background-color: rgba(231, 229, 229, 0);
+  color: white;
   grid-column: 1/-1;
-  border: 1px solid red;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.651);
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -37,35 +48,59 @@ body {
   font-size: 30px;
 }
 .calculator-grid .operation-button {
-  background-color: #df953c;
+  grid-column: 4/-2;
+  background-color: rgba(150, 31, 144, 0.308);
+  color: #f9fcee;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0, 0, 0, 5px grey;
+}
+.calculator-grid .operation-button:hover {
+  background-color: rgba(0, 174, 255, 0.425);
 }
 .calculator-grid .del {
-  background-color: darkred;
+  grid-column: 2/4;
+  background-color: rgba(150, 31, 144, 0.308);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0, 0, 0, 5px grey;
   color: white;
 }
 .calculator-grid .del:hover {
-  background-color: black;
+  background-color: rgba(139, 0, 0, 0.555);
 }
 .calculator-grid .all-clear {
-  background-color: darkslategray;
-  color: orange;
+  background-color: rgba(150, 31, 144, 0.308);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0, 0, 0, 5px grey;
 }
 .calculator-grid .all-clear:hover {
-  background-color: black;
+  background-color: rgba(47, 79, 79, 0.493);
+  color: rgba(255, 166, 0, 0.589);
 }
 .calculator-grid .equals {
-  background-color: #1b18be;
+  grid-column: 3/-1;
+  background-color: rgba(150, 31, 144, 0.308);
   color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0, 0, 5px grey;
 }
 .calculator-grid .equals:hover {
-  background-color: darkred;
+  background-color: rgba(252, 193, 0, 0.521);
 }
 .calculator-grid button {
   margin: 5px;
   padding: 5px;
   font-size: 2rem;
-  background-color: #bae4e4;
+  background-color: rgba(150, 31, 144, 0.308);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  box-shadow: 0 0 5px #2f455a;
 }
 .calculator-grid button:hover {
-  background-color: cornsilk;
+  background-color: rgba(184, 119, 180, 0.308);
 }
